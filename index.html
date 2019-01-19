@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1 id="demo">Hello World</h1>
+<p>I'm hosted with GitHub Pages.</p>
+<button onclick="clearInterval(myVar)">Clear</button>
+<script>
+var myVar = setInterval(myTimer, 1000);
+
+function myTimer() {
+  var d = new Date();
+  var t = d.toLocaleTimeString();
+  document.getElementById("demo").innerHTML = t;
+}
+</script>
+</body>
+</html>
